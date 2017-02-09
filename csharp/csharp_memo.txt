@@ -1,1 +1,2 @@
-﻿
+﻿# https://developer.microsoft.com/en-us/
+# https://code.visualstudio.com/
