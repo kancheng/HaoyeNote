@@ -1,4 +1,5 @@
-﻿1. 結構化程式設計
+﻿## 前導
+1. 結構化程式設計
 (1) if, else, switch
 
 (2) for, while, do while
@@ -29,7 +30,7 @@
 6. 計算理論
 
 
-# JAVA 基本
+## JAVA 基本
 # Chap 1 JAVA 基礎
 
 JAVA 的 Hello World 目的
