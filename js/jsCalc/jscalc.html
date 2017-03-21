@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+		<head>
+			<title>Calc</title>
+		</head>
+
+		<script>
+			var temNum = 0;	/* 暫存數字 */
+			var temOper = 0;	/* 暫存運算子 */
+			var temC = 0;	/* 清空 */
+			var Variable = 0;	/* 暫存運算值 */
+
+		/* 數字處理 */
+
+		function numBu(str) {
+			if (temOper == null) {
+
+				document.getElementById("ans").value = str;
+				temOper = 0;
+
+				return;
+			};
+
+			if (document.getElementById("ans").value==0){ 
+				document.getElementById("ans").value = str;
+			}
+			else {
+				document.getElementById("ans").value += str;
+			}
+
+		}
+
+
+		/* 連續運算無等號*/
+
+		function operBu(str){
+			equal( );
+			Variable = document.getElementById("ans").value;
+			temOper = str;
+			document.getElementById("ans").value = 0;
+		}
+
+		/* 運算有等號 */
+
+		function equal(){   
+
+			switch (temOper){
+				case '+':
+					document.getElementById("ans").value = parseFloat(Variable) + parseFloat(document.getElementById("ans").value);
+				break;
+
+				case '-':
+					document.getElementById("ans").value = parseFloat(Variable) - parseFloat(document.getElementById("ans").value);
+				break;
+
+				case '*':
+					document.getElementById("ans").value = parseFloat(Variable) * parseFloat(document.getElementById("ans").value);
+				break;
+
+				case '/':
+					document.getElementById("ans").value = parseFloat(Variable) / parseFloat(document.getElementById("ans").value);
+				break;
+
+				default:
+
+				break;
+			}
+
+			temNum = null;
+			temOper = null;
+
+		}
+
+		function OAO(){
+
+						temNum = 0;
+						temOper = 0;
+						temC = 0;
+						document.getElementById("ans").value = '0';
+
+		}
+
+		</script>
+	<body>
+			<!-- KanCheng edit 20160406 -->
+
+	<div style="text-align:center">
+			<div>
+				<h1>Calc</h1>
+				KanCheng
+			</div>
+				<br>
+			<div>
+				<input  type="text" value="0" id="ans"  />
+			</div>
+		<br>
+		<br>
+			<div>
+				<input  type="button" value="7" onClick="numBu('7')">
+				<input  type="button" value="8" onClick="numBu('8')">
+				<input  type="button" value="9" onClick="numBu('9')">
+				<input  type="button" value="+" onClick="operBu('+')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" value="4" onClick="numBu('4')">
+				<input  type="button" value="5" onClick="numBu('5')">
+				<input  type="button" value="6" onClick="numBu('6')">
+				<input  type="button" value="-" onClick="operBu('-')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" value="1" onClick="numBu('1')">
+				<input  type="button" value="2" onClick="numBu('2')">
+				<input  type="button" value="3" onClick="numBu('3')">
+				<input  type="button" value="*" onClick="operBu('*')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" value="0" onClick="numBu('0')">
+				<input  type="button" value="C" onClick="OAO()">
+				<input  type="button" value="/" onClick="operBu('/')">
+				<input  type="button" value="=" onClick="equal()">
+			</div>
+		<br>
+		<br>
+	</div>
+		<br>
+	</body>
+</html>
