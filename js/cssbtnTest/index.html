@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calc</title>
+		<script type = "text/javascript" src = "js/calc.js"></script>
+		<link rel = stylesheet type = "text/css" href = "css/main.css">
+		<link rel = "stylesheet" href = "css/bootstrap.min.css">
+	</head>
+	<body style = "bgcol">
+			<!-- haoye edit 20170322 -->
+
+	<div style = "text-align:center">
+			<div>
+				<br>
+				<br>
+				<h1>Calc</h1>
+				Haoye
+			</div>
+				<br>
+			<div>
+				<input  type="text" class="btn-calcnmb" value="0" id="ans"  />
+			</div>
+		<br>
+			<div>
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="7" onClick="numBu('7')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="8" onClick="numBu('8')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="9" onClick="numBu('9')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="+" onClick="operBu('+')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="4" onClick="numBu('4')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="5" onClick="numBu('5')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="6" onClick="numBu('6')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="-" onClick="operBu('-')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="1" onClick="numBu('1')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="2" onClick="numBu('2')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="3" onClick="numBu('3')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="*" onClick="operBu('*')">
+			</div>
+		<br>
+			<div>
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="0" onClick="numBu('0')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="C" onClick="OAO()">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="/" onClick="operBu('/')">
+				<input  type="button" class="btn btn-primary btn-calcnmk" value="=" onClick="equal()">
+			</div>
+		<br>
+		<br>
+	</div>
+	</body>
+</html>
