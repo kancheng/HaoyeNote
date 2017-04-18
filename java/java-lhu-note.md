@@ -1,10 +1,14 @@
-﻿## 前導
+﻿# Java
+
+## 前導
+
 1. 結構化程式設計
 (1) if, else, switch
 
 (2) for, while, do while
 
 ## 分支結構、重複結構
+
 (3) 陣列
 
 2. 物件導向程式設計
@@ -31,7 +35,8 @@
 
 
 ## JAVA 基本
-# Chap 1 JAVA 基礎
+
+### Chap 1 JAVA 基礎
 
 JAVA 的 Hello World 目的
  
@@ -39,7 +44,7 @@ JAVA 的 Hello World 目的
 
 P.S : 每個程式語言要 Hello World 的目的在於可以看到最基本的架構。
 
-# Chap 2 資料與型態
+### Chap 2 資料與型態
 
 JAVA 兩大類 -> 數值、文字
 
@@ -50,13 +55,16 @@ JAVA 兩大類 -> 數值、文字
 P.S: 字元常數表示法
 
 
-# Chap 3 運算式與運算子
+### Chap 3 運算式與運算子
 
 算術、邏輯、關係、位元
 
-# Chap 4 基本 IO (類別)
 
-# Chap 5 基本類別與方法設計的概念
+### Chap 4 基本 IO (類別)
+
+
+### Chap 5 基本類別與方法設計的概念
+
 
 類別是由方法和欄位所組成 
 
@@ -64,23 +72,25 @@ P.S: 字元常數表示法
 
 變數的生命週期
 
-# Chap 6
+### Chap 6
 
 if, if-else 
 
 
 switch
 
-# Chap 7 迴圈
+### Chap 7 迴圈
+
 for, while, do-while
 
-# Chap 8 陣列
+### Chap 8 陣列
+
 一維陣列的應用
 
-# Chap 9 方法
+### Chap 9 方法
 
 
-# 資料結構
+### 資料結構
 陣列、串列、堆疊、序列、樹、圖形、遞迴
 
 靜態 vs 動態
